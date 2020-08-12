@@ -1,0 +1,62 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      {
+        "location": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\src\\pages"
+      }
+    ],
+    "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app"
+  ],
+  "paths": {
+    "ROOT": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app",
+    "SRC": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\src",
+    "DIST": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\build",
+    "ASSETS": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\build",
+    "PLUGINS": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\plugins",
+    "TEMP": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\tmp",
+    "ARTIFACTS": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\artifacts",
+    "PUBLIC": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\public",
+    "NODE_MODULES": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\node_modules",
+    "PACKAGE": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\build\\index.html",
+    "STATIC_DATA": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\build\\staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
