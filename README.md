@@ -142,7 +142,7 @@ $ yarn add electron-serve # or npm i electron-serve
 ```bash
 # Add this configuration directly inside default exported object, 
 # this makes sure that the production code is generated in 'build' directory
-#and not in the 'dist' directory as it is reserved for electron-builder output.
+# and not in the 'dist' directory as it is reserved for electron-builder output.
 export default {
 ...
   paths: {
