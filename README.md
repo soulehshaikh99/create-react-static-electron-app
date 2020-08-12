@@ -247,13 +247,27 @@ app.on('activate', function () {
 // code. You can also put them in separate files and require them here.
 ```
 
-#### 12) Add scripts in package.json
+#### 12) Add electron, electron-dev, preelectron-pack and electron-pack scripts
 
 ```bash
+# Add this scripts
 "electron": "wait-on http://localhost:3000 && electron .",
 "electron-dev": "concurrently \"yarn start\" \"yarn electron\"",
 "preelectron-pack": "yarn build",
 "electron-pack": "electron-builder"
+
+# You should end up with something similar
+"scripts": {
+  "start": "react-static start",
+  "stage": "react-static build --staging",
+  "build": "react-static build",
+  "analyze": "react-static build --analyze",
+  "serve": "serve dist -p 3000",
+  "electron": "wait-on http://localhost:3000 && electron .",
+  "electron-dev": "concurrently \"yarn start\" \"yarn electron\"",
+  "preelectron-pack": "yarn build",
+  "electron-pack": "electron-builder"
+}
 ```
 
 #### 13) Add the following Electron Configuration in package.json
