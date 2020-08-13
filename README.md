@@ -81,31 +81,20 @@ $ react-static create
 $ cd create-react-static-electron-app
 ```
 
-#### 4) Initailize project with your favourite package manager
-
-```bash
-# set entry point to main.js
-$ yarn init # or npm init
-```
-
-#### 5) Download the app icon
-
-[favicon.png](https://raw.githubusercontent.com/soulehshaikh99/assets/master/framework-icons/react-static/favicon.png) and place it in the public directory.
-
-#### 6) Install Development Dependencies
+#### 4) Install Development Dependencies
 
 ```bash
 $ yarn add --dev electron electron-builder wait-on concurrently
 # npm i -D electron electron-builder wait-on concurrently
 ```
 
-#### 7) Install Production Dependency
+#### 5) Install Production Dependency
 
 ```bash
 $ yarn add electron-serve # or npm i electron-serve
 ```
 
-#### 8) Your dependencies should look something like this
+#### 6) Your dependencies should look something like this
 
 ```json
 "dependencies": {
@@ -137,7 +126,12 @@ $ yarn add electron-serve # or npm i electron-serve
 }
 ```
 
-#### 9) Paste the below configuration in static.config.js file
+#### 7) Download the app icon
+
+[favicon.png](https://raw.githubusercontent.com/soulehshaikh99/assets/master/framework-icons/react-static/favicon.png) and place it in the public directory.
+
+
+#### 8) Paste the below configuration in static.config.js file
 
 ```bash
 # Add this configuration directly inside default exported object, 
@@ -151,7 +145,7 @@ export default {
 }
 ```
 
-#### 10) Create main.js file (serves as entry point for Electron App's Main Process)
+#### 9) Create main.js file (serves as entry point for Electron App's Main Process)
 
 ```bash
 # Windows Users
@@ -162,7 +156,7 @@ $ fsutil file createnew main.js 0
 $ touch main.js
 ```
 
-#### 11) Paste the below code in main.js file
+#### 10) Paste the below code in main.js file
 
 ```js
 // Modules to control application life and create native browser window
@@ -247,7 +241,7 @@ app.on('activate', function () {
 // code. You can also put them in separate files and require them here.
 ```
 
-#### 12) Add electron, electron-dev, preelectron-pack and electron-pack scripts
+#### 11) Add electron, electron-dev, preelectron-pack and electron-pack scripts
 
 ```bash
 # Add this scripts
@@ -270,12 +264,12 @@ app.on('activate', function () {
 }
 ```
 
-#### 13) Add the following Electron Configuration in package.json
+#### 12) Add the following Electron Configuration in package.json
 
 **Note:** build configuration is used by electron-builder, modify it if you wish to add more packaging and native distribution options for different OS Platforms.
 
 ```bash
-"main": "main.js", # please verify entry point is set to main.js 
+"main": "main.js",
 "build": {
   "icon": "public/favicon.png",
   "productName": "React Static and Electron App",
@@ -286,7 +280,7 @@ app.on('activate', function () {
 }
 ```
 
-#### 14) Test drive your app
+#### 13) Test drive your app
 
 ```bash
 # Run your app
