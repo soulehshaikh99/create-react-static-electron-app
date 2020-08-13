@@ -241,7 +241,7 @@ app.on('activate', function () {
 // code. You can also put them in separate files and require them here.
 ```
 
-#### 11) Add electron, electron-dev, preelectron-pack and electron-pack scripts
+#### 11) Update the script section of `package.json`
 
 ```bash
 # Add this scripts
@@ -264,19 +264,22 @@ app.on('activate', function () {
 }
 ```
 
-#### 12) Add the following Electron Configuration in package.json
+#### 12) Add the following configuration in package.json
 
 **Note:** build configuration is used by electron-builder, modify it if you wish to add more packaging and native distribution options for different OS Platforms.
 
 ```bash
-"main": "main.js",
+"main": "main.js",  // Application Entry Point
 "build": {
   "icon": "public/favicon.png",
   "productName": "React Static and Electron App",
   "files": [
     "build/**/*",
     "main.js"
-  ]
+  ],
+  "win": {},  // Windows Specific Configuration
+  "linux": {},  // Linux Specific Configuration
+  "mac": {}  // MacOs Specific Configuration
 }
 ```
 
