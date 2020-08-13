@@ -137,7 +137,7 @@ $ yarn add electron-serve # or npm i electron-serve
 }
 ```
 
-#### 9) Paste react-static configuration in static.config.js file
+#### 9) Paste the below configuration in static.config.js file
 
 ```bash
 # Add this configuration directly inside default exported object, 
