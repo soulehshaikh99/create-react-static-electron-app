@@ -5,8 +5,8 @@
   ],
   "version": "4.44.1",
   "hash": "131e2c56687435106493",
-  "time": 20487,
-  "builtAt": 1597239420363,
+  "time": 11170,
+  "builtAt": 1597307262281,
   "publicPath": "/",
   "outputPath": "C:\\Users\\Souleh\\Desktop\\create-react-static-electron-app\\build",
   "assetsByChunkName": {
