@@ -36,7 +36,7 @@ The aim of this project is to provide Web Developers using `react-static` the po
 
 ## 🚀 Getting Started
 
-**Note:** If you wish to use npm over yarn then modify package.json by replacing `yarn` with `npm` in `electron-dev` and `preelectron-pack` scripts.
+**Note:** If you wish to use npm over yarn then modify `package.json` by replacing `yarn` with `npm` in `electron-dev` and `preelectron-pack` scripts.
 But I strongly recommend using <em>yarn</em> as it is a better choice when compared to <em>npm</em>.
 
 ### 🤓 Use this boilerplate
@@ -69,7 +69,7 @@ $ yarn global add react-static
 # npm i -g react-static
 ``` 
 
-#### 2) Create project using react-static static-site generator tool.
+#### 2) Create project using react-static.
 ```bash
 # project name: create-react-static-electron-app
 # template: basic
@@ -94,7 +94,11 @@ $ yarn add --dev electron electron-builder wait-on concurrently
 $ yarn add electron-serve # or npm i electron-serve
 ```
 
-#### 6) Your dependencies should look something like this
+#### 6) Download the app icon
+
+[favicon.png](https://raw.githubusercontent.com/soulehshaikh99/assets/master/framework-icons/react-static/favicon.png) and place it in the public directory.
+
+#### 7) Your dependencies should look something like this
 
 ```json
 "dependencies": {
@@ -125,11 +129,6 @@ $ yarn add electron-serve # or npm i electron-serve
   "wait-on": "^5.2.0"
 }
 ```
-
-#### 7) Download the app icon
-
-[favicon.png](https://raw.githubusercontent.com/soulehshaikh99/assets/master/framework-icons/react-static/favicon.png) and place it in the public directory.
-
 
 #### 8) Paste the below configuration in static.config.js file
 
@@ -264,7 +263,7 @@ app.on('activate', function () {
 }
 ```
 
-#### 12) Add the following configuration in package.json
+#### 12) Add the following configuration in `package.json`
 
 **Note:** build configuration is used by electron-builder, modify it if you wish to add more packaging and native distribution options for different OS Platforms.
 
