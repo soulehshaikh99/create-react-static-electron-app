@@ -64,19 +64,22 @@ $ yarn electron-pack # or npm run electron-pack
 ### 💫 Create this boilerplate from scratch (Manual Setup)
 
 #### 1) Start by installing `react-static` globally
+
 ```bash
 $ yarn global add react-static
 # npm i -g react-static
 ``` 
 
-#### 2) Create project using react-static.
+#### 2) Create project using react-static
+
 ```bash
 # project name: create-react-static-electron-app
 # template: basic
 $ react-static create
 ```
 
-#### 3) Switch to project directory.
+#### 3) Switch to project directory
+
 ```bash
 $ cd create-react-static-electron-app
 ```
@@ -94,11 +97,7 @@ $ yarn add --dev electron electron-builder wait-on concurrently
 $ yarn add electron-serve # or npm i electron-serve
 ```
 
-#### 6) Download the app icon
-
-[favicon.png](https://raw.githubusercontent.com/soulehshaikh99/assets/master/framework-icons/react-static/favicon.png) and place it in the public directory.
-
-#### 7) Your dependencies should look something like this
+#### 6) Your dependencies should look something like this
 
 ```json
 "dependencies": {
@@ -130,7 +129,11 @@ $ yarn add electron-serve # or npm i electron-serve
 }
 ```
 
-#### 8) Paste the below configuration in static.config.js file
+#### 7) Download the app icon
+
+[favicon.png](https://raw.githubusercontent.com/soulehshaikh99/assets/master/framework-icons/react-static/favicon.png) and place it in the public directory.
+
+#### 8) Paste react-static configuration in static.config.js file
 
 ```bash
 # Add this configuration directly inside default exported object, 
@@ -268,7 +271,7 @@ app.on('activate', function () {
 **Note:** build configuration is used by electron-builder, modify it if you wish to add more packaging and native distribution options for different OS Platforms.
 
 ```bash
-"main": "main.js",  // Application Entry Point
+"main": "main.js",  # Application Entry Point, please verify entry point is set to main.js 
 "build": {
   "icon": "public/favicon.png",
   "productName": "React Static and Electron App",
