@@ -19,7 +19,10 @@
     "files": [
       "build/**/*",
       "main.js"
-    ]
+    ],
+    "win": {},
+    "linux": {},
+    "mac": {}
   },
   "scripts": {
     "start": "react-static start",
